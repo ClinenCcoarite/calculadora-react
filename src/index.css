@@ -3,7 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.github{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-size: 3rem;
+    text-decoration: none;
+    color: #0a123d;
+    margin-top:1rem ;
+}
+.github p{
+    font-size: 20px;
+}
 .container-calculadora {
     max-width: 320px;
     height: 380px;

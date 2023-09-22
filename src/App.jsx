@@ -2,7 +2,8 @@ import { Boton } from './Boton';
 import { Pantalla } from './Panta';
 import { useState } from 'react';
 import { evaluate } from 'mathjs';
-
+import { Githublink } from './GithubLink'
+import { BrowserRouter } from 'react-router-dom'
 function App() {
   const [input, setInput] = useState('');
 
@@ -26,6 +27,9 @@ function App() {
 
   return (
     <div>
+      <BrowserRouter>
+        <Githublink/>
+      </BrowserRouter>
       <div className="container-calculadora" onKeyDown={press}>
         <Pantalla input={input} />
         <div className="fila">
